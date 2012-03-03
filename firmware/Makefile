@@ -15,7 +15,7 @@
 # FUSES ........ Parameters for avrdude to flash the fuses appropriately.
 
 DEVICE     = atmega8
-CLOCK      = 8000000
+CLOCK      = 8000000UL
 PROGRAMMER = -c usbtiny
 OBJECTS    = main.o
 FUSES      = -U hfuse:w:0xd9:m -U lfuse:w:0x64:m
