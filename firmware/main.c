@@ -43,6 +43,7 @@ int main(void)
 {
     WDTCR |= (1<<WDCE); //enable changes to watchdog timer register
     WDTCR &= ~(1<<WDE); //disable watchdog timer.
+    
     setupADC(); //ADC register definitions, etc.
     setupRandomGenerator(); //timer register setup
     sei(); //enable interrupts;
