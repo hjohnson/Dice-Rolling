@@ -10140,9 +10140,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <plain>
 <text x="25.4" y="177.8" size="1.778" layer="94">Random bit Generator</text>
 <wire x1="2.54" y1="182.88" x2="2.54" y2="129.54" width="0.2032" layer="94"/>
-<wire x1="2.54" y1="129.54" x2="83.82" y2="129.54" width="0.2032" layer="94"/>
-<wire x1="83.82" y1="129.54" x2="83.82" y2="182.88" width="0.2032" layer="94"/>
-<wire x1="83.82" y1="182.88" x2="2.54" y2="182.88" width="0.2032" layer="94"/>
+<wire x1="2.54" y1="129.54" x2="91.44" y2="129.54" width="0.2032" layer="94"/>
+<wire x1="91.44" y1="129.54" x2="91.44" y2="182.88" width="0.2032" layer="94"/>
+<wire x1="91.44" y1="182.88" x2="2.54" y2="182.88" width="0.2032" layer="94"/>
 <wire x1="2.54" y1="127" x2="2.54" y2="30.48" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="30.48" x2="63.5" y2="30.48" width="0.1524" layer="94"/>
 <wire x1="63.5" y1="30.48" x2="63.5" y2="127" width="0.1524" layer="94"/>
@@ -10176,7 +10176,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <text x="50.8" y="81.28" size="2.54" layer="94">D12</text>
 <text x="50.8" y="76.2" size="2.54" layer="94">D20</text>
 <text x="2.54" y="2.54" size="1.778" layer="94">Random bit generator hardware from  Leon Nathaniel Maurer, http://tinyurl.com/DIYrandomgen</text>
-<text x="109.474" y="169.164" size="1.778" layer="94">not polarized</text>
+<text x="117.348" y="157.734" size="1.27" layer="94">not polarized</text>
 <text x="152.4" y="30.48" size="2.54" layer="94">Multi-Sized dice roller</text>
 <text x="152.4" y="25.4" size="2.54" layer="94">CC BY/SA Harry Johnson</text>
 <text x="205.74" y="25.4" size="2.54" layer="94">github.com/hjohnson</text>
@@ -10197,11 +10197,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <text x="111.76" y="63.5" size="1.778" layer="94">The Atmega8 has a timer ISR that triggers every 32uS, sampling the digital input</text>
 <text x="111.76" y="60.96" size="1.778" layer="94">The Von Neumann Method is implemented in this ISR to de-bias the input</text>
 <text x="111.76" y="58.42" size="1.778" layer="94">When the conditions of the method are met, the new bit is mixed into a 32 bit number</text>
-<text x="111.76" y="55.88" size="1.778" layer="94">Hence, this 32 bit number is random, and constantly updated</text>
+<text x="111.76" y="55.88" size="1.778" layer="94">Hence, this 32 bit number is both random and constantly updated</text>
 <wire x1="109.22" y1="101.6" x2="109.22" y2="53.34" width="0.1524" layer="94"/>
 <wire x1="109.22" y1="53.34" x2="241.3" y2="53.34" width="0.1524" layer="94"/>
 <wire x1="241.3" y1="53.34" x2="241.3" y2="101.6" width="0.1524" layer="94"/>
 <wire x1="241.3" y1="101.6" x2="203.2" y2="101.6" width="0.1524" layer="94"/>
+<text x="208.28" y="175.26" size="1.778" layer="94">Common Anode</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -10217,17 +10218,17 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="R4" gate="G$1" x="45.72" y="172.72" rot="R180"/>
 <instance part="R5" gate="G$1" x="33.02" y="172.72" rot="R180"/>
 <instance part="C1" gate="G$1" x="27.94" y="152.4" rot="R90"/>
-<instance part="C2" gate="G$1" x="119.38" y="162.56" rot="R90"/>
+<instance part="C2" gate="G$1" x="116.84" y="157.48"/>
 <instance part="U1" gate="G$1" x="157.48" y="142.24"/>
 <instance part="U$2" gate="G$1" x="226.06" y="139.7"/>
 <instance part="GND2" gate="1" x="53.34" y="170.18"/>
 <instance part="SUPPLY1" gate="1" x="5.08" y="175.26"/>
 <instance part="SUPPLY2" gate="1" x="45.72" y="165.1"/>
-<instance part="SUPPLY3" gate="1" x="129.54" y="165.1"/>
+<instance part="SUPPLY3" gate="1" x="116.84" y="165.1"/>
 <instance part="GND3" gate="1" x="132.08" y="109.22"/>
 <instance part="R6" gate="G$1" x="228.6" y="165.1" rot="R90"/>
 <instance part="P+1" gate="1" x="228.6" y="175.26"/>
-<instance part="GND4" gate="1" x="114.3" y="160.02"/>
+<instance part="GND4" gate="1" x="116.84" y="147.32"/>
 <instance part="R7" gate="G$1" x="132.08" y="172.72" rot="R90"/>
 <instance part="P+3" gate="1" x="134.62" y="180.34"/>
 <instance part="SW4" gate="G$1" x="33.02" y="86.36"/>
@@ -10249,7 +10250,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="U$3" gate="G$1" x="15.24" y="15.24"/>
 <instance part="R15" gate="G$1" x="58.42" y="83.82" rot="R90"/>
 <instance part="GND7" gate="1" x="58.42" y="73.66"/>
-<instance part="TP1" gate="G$1" x="124.46" y="175.26"/>
+<instance part="TP1" gate="G$1" x="124.46" y="170.18"/>
 </instances>
 <busses>
 </busses>
@@ -10292,13 +10293,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <junction x="132.08" y="111.76"/>
 </segment>
 <segment>
-<pinref part="GND4" gate="1" pin="GND"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="114.3" y1="162.56" x2="116.84" y2="162.56" width="0.1524" layer="91"/>
-<junction x="116.84" y="162.56"/>
-<junction x="114.3" y="162.56"/>
-</segment>
-<segment>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="10.16" y1="43.18" x2="10.16" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="R14" gate="G$1" pin="1"/>
@@ -10316,6 +10310,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="R15" gate="G$1" pin="1"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="58.42" y1="78.74" x2="58.42" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND4" gate="1" pin="GND"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="116.84" y1="152.4" x2="116.84" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -10411,17 +10410,16 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <segment>
 <pinref part="SUPPLY3" gate="1" pin="V+"/>
 <pinref part="U1" gate="G$1" pin="AVCC"/>
-<wire x1="129.54" y1="162.56" x2="134.62" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="162.56" x2="134.62" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="VCC@1"/>
 <wire x1="134.62" y1="162.56" x2="134.62" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="VCC@2"/>
 <wire x1="134.62" y1="160.02" x2="134.62" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="124.46" y1="162.56" x2="129.54" y2="162.56" width="0.1524" layer="91"/>
 <junction x="134.62" y="162.56"/>
 <junction x="134.62" y="160.02"/>
 <junction x="134.62" y="157.48"/>
-<junction x="129.54" y="162.56"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="116.84" y1="162.56" x2="116.84" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+1" gate="1" pin="V+"/>
@@ -10452,6 +10450,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="U1" gate="G$1" pin="AREF"/>
 <wire x1="132.08" y1="152.4" x2="134.62" y2="152.4" width="0.1524" layer="91"/>
 <junction x="134.62" y="152.4"/>
+<junction x="132.08" y="152.4"/>
 </segment>
 </net>
 <net name="A1" class="0">
@@ -10673,9 +10672,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <junction x="132.08" y="167.64"/>
 <junction x="134.62" y="167.64"/>
 <pinref part="TP1" gate="G$1" pin="TP"/>
-<wire x1="124.46" y1="172.72" x2="129.54" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="167.64" x2="132.08" y2="167.64" width="0.1524" layer="91"/>
-<junction x="124.46" y="172.72"/>
+<wire x1="124.46" y1="167.64" x2="132.08" y2="167.64" width="0.1524" layer="91"/>
+<junction x="124.46" y="167.64"/>
 </segment>
 </net>
 <net name="RX" class="0">
@@ -10796,7 +10794,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <segment>
 <pinref part="IC1" gate="B" pin="OUT"/>
 <wire x1="71.12" y1="162.56" x2="73.66" y2="162.56" width="0.1524" layer="91"/>
-<label x="66.04" y="165.1" size="1.778" layer="95"/>
+<label x="73.66" y="162.56" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="PD2(INT0)"/>
