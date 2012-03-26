@@ -1,0 +1,19 @@
+Partlist exported from /Users/harryjohnson/Desktop/git_trunk/D&D_dice/D&D_dice_1.sch at 3/23/12 3:49 PM
+
+Assembly variant: 
+
+Qty Value           Device              Parts                       
+1                   TRANSISTOR_NPNSOT23 Q1                          
+1                   ZXRE1004FFTA        U$1                         
+2   .1uF            C-USC0805           C1, C2                      
+6   1K              R-US_R0805          R9, R10, R11, R12, R13, R14 
+1   1M R            RESISTOR0805-RES    R3                          
+1   2DIGIT_7SEGMENT 2DIGIT_7SEGMENT     U$2                         
+3   10K             R-US_R0805          R4, R5, R7                  
+2   100K            R-US_R0805          R1, R15                     
+2   470R            R-US_R0805          R2, R6                      
+1   ATMEGA168       ATMEGA168           U1                          
+1   MCP6282-E/SN-ND OPA2340U            IC1                         
+1   OSHW-LOGOS      OSHW-LOGOS          U$3                         
+6   SPST_SWITCH     SPST_SWITCH         SW1, SW2, SW3, SW4, SW5, SW6
+1   TPB1,27         TPB1,27             TP1                         

@@ -10180,6 +10180,28 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <text x="152.4" y="30.48" size="2.54" layer="94">Multi-Sized dice roller</text>
 <text x="152.4" y="25.4" size="2.54" layer="94">CC BY/SA Harry Johnson</text>
 <text x="205.74" y="25.4" size="2.54" layer="94">github.com/hjohnson</text>
+<text x="10.16" y="175.26" size="1.778" layer="97">3V</text>
+<text x="20.32" y="142.24" size="1.778" layer="97">0V</text>
+<text x="124.46" y="96.52" size="2.54" layer="94">Random Bit Generator Theory of Operation</text>
+<text x="111.76" y="91.44" size="1.778" layer="94">The noise in the Zener is loudest when the current through the zener is around 10uA</text>
+<text x="111.76" y="88.9" size="1.778" layer="94">So: 0V ground + .75V Base-Emitter voltage on 2n3904 = .75V</text>
+<text x="111.76" y="86.36" size="1.778" layer="94">.75V + 1.22V across Zener = 1.97V</text>
+<text x="111.76" y="83.82" size="1.778" layer="94">(3V - 1.97V) = 1.03V across 100K R1, so 10.3uA, good enough</text>
+<text x="111.76" y="81.28" size="1.778" layer="94">10.3uA * ~200 Current Gain (Hfe) = 2mA</text>
+<text x="111.76" y="78.74" size="1.778" layer="94">3V - (2mA * 470R) = 1.59V, close to the middle of the 3V Vcc</text>
+<text x="111.76" y="76.2" size="1.778" layer="94">Zener current is noisy, that noise is amplified by 2n3904 too</text>
+<text x="111.76" y="73.66" size="1.778" layer="94">And due to cap, only this noise is taken and sent to the op amp</text>
+<text x="111.76" y="71.12" size="1.778" layer="94">Amp has an extremely large gain, due to 1M ohm feedback resistor.</text>
+<text x="111.76" y="68.58" size="1.778" layer="94">For good measure, the signal is fed through a second op amp acting as a comparator.</text>
+<text x="111.76" y="66.04" size="1.778" layer="94">This is fed as a digital signal into the atmega8</text>
+<text x="111.76" y="63.5" size="1.778" layer="94">The Atmega8 has a timer ISR that triggers every 32uS, sampling the digital input</text>
+<text x="111.76" y="60.96" size="1.778" layer="94">The Von Neumann Method is implemented in this ISR to de-bias the input</text>
+<text x="111.76" y="58.42" size="1.778" layer="94">When the conditions of the method are met, the new bit is mixed into a 32 bit number</text>
+<text x="111.76" y="55.88" size="1.778" layer="94">Hence, this 32 bit number is random, and constantly updated</text>
+<wire x1="109.22" y1="101.6" x2="109.22" y2="53.34" width="0.1524" layer="94"/>
+<wire x1="109.22" y1="53.34" x2="241.3" y2="53.34" width="0.1524" layer="94"/>
+<wire x1="241.3" y1="53.34" x2="241.3" y2="101.6" width="0.1524" layer="94"/>
+<wire x1="241.3" y1="101.6" x2="203.2" y2="101.6" width="0.1524" layer="94"/>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
