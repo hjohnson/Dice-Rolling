@@ -1,3 +1,7 @@
+The DigiDice is an easy to use electronic die that is powered by 2 AA batteries, and uses a hardware random number generator to replace the six standard sizes of dice used in most games (D4, D6, D8, D10, D12, D20).  
+
+Extended Version, for official writeup:
+
 	“Any one who considers arithmetical methods of producing random digits is, of course, in a state of sin.” – John Von Neumann, 1951
 
    When I started this project, I had several design goals in mind: I wanted it to be extremely small and easy to carry, yet have 6 buttons to “roll” each of the standard sizes of die (D4, D6, D8, D10, D12, and D20). I also wanted it to based on a Random Number Generator (RNG) implemented in hardware instead of using the built in pseudo-random number generator. As those who have been watching the Show And Tell will know, I’m proud to say that I’ve succeeded. 
